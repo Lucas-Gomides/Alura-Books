@@ -1,0 +1,299 @@
+@media screen and (max-width: 1023px) {
+    .footer__start {
+        padding: 1.3em;
+        background: white;
+    }
+
+    .footer__titulo {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--azul);
+        margin-bottom: 0.8em;
+    }
+
+    .footer__paragrafo {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 1em;
+        color: var(--azul);
+    }
+
+    .footer__paragrafo1,
+    .footer__paragrafo2 {
+        display: none;
+    }
+
+    .footer__email {
+        color: var(--azul);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        border: 1px solid var(--azul);
+        border-radius: 24px;
+        width: 84vw;
+        height: 1.5em;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .footer__email::placeholder {
+        padding-left: 3em;
+    }
+
+    .footer__email::placeholder {
+        font-family: var(--fonte-principal);
+        color: var(--azul);
+        background: url(img/Vector.svg) no-repeat;
+        background-position-y: center;
+        background-position-x: 1em;
+    }
+
+    .footer__end {
+        box-shadow: 0 0 0 1px #858585;
+    }
+
+    .footer__end-texto {
+        background-color: var(--cinza);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 1.2em 0 1.4em 1.5em;
+    }
+
+    .footer__listas {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1727px) {
+    .footer__start {
+        padding: 2em 9.8em 3em 9.8em;
+        background: white;
+    }
+
+    .footer__titulo {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--azul);
+        margin-bottom: 0.2em;
+    }
+
+    .footer__paragrafo {
+        display: none;
+    }
+
+    .footer__paragrafo1,
+    .footer__paragrafo2 {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--azul);
+    }
+
+    .footer__email {
+        color: var(--azul);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        border: 1px solid var(--azul);
+        border-radius: 24px;
+        width: 20vw;
+        height: 1.5em;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .footer__email::placeholder {
+        padding-left: 3em;
+    }
+
+    .footer__email::placeholder {
+        font-family: var(--fonte-principal);
+        color: var(--azul);
+        background: url(img/Vector.svg) no-repeat;
+        background-position-y: center;
+        background-position-x: 1em;
+    }
+
+    .footer__end {
+        background-color: var(--cinza);
+        box-shadow: 0 0 0 2px #858585;
+    }
+
+    .footer__end-texto {
+        display: none;
+    }
+
+    .footer__end-texto-1024 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .footer__listas {
+        display: flex;
+        justify-content: space-between;
+        padding: 4em 2em 3.5em 1.7em;
+    }
+
+    .footer__listas-titulo {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #858585;
+        margin-bottom: 2em;
+    }
+
+    .footer__lista-item a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #474646;
+        text-decoration: none;
+        margin-left: 0.8em;
+    }
+
+    .footer__lista-educacao,
+    .footer__lista-educacao-online,
+    .footer__lista-comunidade {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__lista-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .footer__start {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer__start-lista2 {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .footer__start {
+        padding: 4em 16em 3.7em 16em;
+        background: white;
+
+    }
+
+    .footer__titulo {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--azul);
+        margin-bottom: 0.2em;
+    }
+
+    .footer__paragrafo {
+        display: none;
+    }
+
+    .footer__paragrafo1,
+    .footer__paragrafo2 {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--azul);
+    }
+
+    .footer__email {
+        color: var(--azul);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        border: 1px solid var(--azul);
+        border-radius: 24px;
+        width: 20vw;
+        height: 1.5em;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .footer__email::placeholder {
+        padding-left: 3em;
+    }
+
+    .footer__email::placeholder {
+        font-family: var(--fonte-principal);
+        color: var(--azul);
+        background: url(img/Vector.svg) no-repeat;
+        background-position-y: center;
+        background-position-x: 1em;
+    }
+
+    .footer__end {
+        background-color: var(--cinza);
+        box-shadow: 0 0 0 2px #858585;
+    }
+
+    .footer__end-texto {
+        display: none;
+    }
+
+    .footer__end-texto-1024 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        margin-left: 1em;
+    }
+
+    .footer__listas {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 4em 2em 3.5em 1.7em;
+    }
+
+    .footer__listas-titulo {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #858585;
+        margin-bottom: 2em;
+    }
+
+    .footer__lista-item a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #474646;
+        text-decoration: none;
+        margin-left: 0.8em;
+    }
+
+    .footer__lista-educacao,
+    .footer__lista-educacao-online,
+    .footer__lista-comunidade {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.2em;
+        border-left: 1px solid black;
+        padding-left: 1em;
+    }
+
+    .footer__lista-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .footer__start {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer__start-lista2 {
+        display: flex;
+        align-items: center;
+    }
+}

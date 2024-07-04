@@ -1,0 +1,394 @@
+/*versão de Smartphones*/
+@media screen and (max-width: 1023px) {
+    
+    .cabeçalho__menu-hamburguer {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        padding: 1.7em;
+        margin-right: 1em;
+    }
+    
+    .cabeçalho {
+        background-color: var(--branco);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .container__botao:checked ~ .container__label > .cabeçalho__menu-hamburguer {
+        background-image: url(../Menu\ Aberto.svg);
+    }
+
+    .container__botao:checked ~ .container__label {
+        background: var(--azul-degrade);
+        width: 5em;
+        margin-right: 1em;
+    }
+
+    .container__imagem-cabecalho {
+        padding: 1em;
+        margin-left: 1em
+
+    }
+
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+        background-color: white;
+    }
+
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+
+    .lista-menu__titulo,
+    .lista-menu__item {
+        padding: 1em;
+        background-color: var(--branco);
+    }
+
+    .lista-menu__titulo {
+        color: var(--laranja);
+        font-weight: 700;
+    }
+
+    .lista-menu__link {
+        background: var(--azul-degrade);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+
+    .container__botao {
+        display: none;
+    }
+
+    #alura {
+        display: none;
+    }
+
+    #books {
+        display: none;
+    }
+
+    .opcoes__item {
+        display: none;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .container__imagem-cabecalho-compras,
+    .container__imagem-cabecalho-perfil {
+        display: none;
+    }
+}
+
+/*versão de Tablets*/
+@media screen and (min-width: 1024px) and (max-width: 1727px) {
+
+    .cabeçalho__menu-hamburguer {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    
+    .cabeçalho {
+        background-color: var(--branco);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+    }    
+
+    .container__imagem {
+        padding: 1em 1em 1em 1.5em;
+    }
+
+    .container__imagem-alura {
+        padding: 1.2em 0.7em 1.2em 1.2em;
+        margin-left: 3.3em;
+    }
+
+    #alura {
+        font-family: var(--fonte-secundaria);
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        padding-top: 0.4em;
+    }
+
+    #books {
+        font-family: var(--fonte-secundaria);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        padding-top: 0.4em;
+    }
+
+    
+    .lista-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        width: 20vw;
+    }
+    
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+
+    .lista-menu__titulo,
+    .lista-menu__item {
+        padding: 1em;
+        background-color: var(--branco);
+    }
+
+    .lista-menu__titulo {
+        color: var(--laranja);
+        font-weight: 700;
+    }
+
+    .lista-menu__link {
+        background: var(--azul-degrade);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: none;
+        background-clip: text;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .container__botao {
+        display: none;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+
+    .trio {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .opcoes__item {
+        margin: 0 3em;
+        text-decoration: none;
+        color: black;
+        padding: 2em;
+    }
+
+    .container__imagem-favoritos {
+        display: none;
+    }
+
+    .container__imagem-cabecalho {
+        margin-right: 2em;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .menu__label > .opcoes__item {
+        background: var(--azul-degrade);
+        color: white;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        color: var(--branco);
+    }
+
+    .container__imagem-cabecalho-compras,
+    .container__imagem-cabecalho-perfil {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__imagem-cabecalho-compras-a,
+    .container__imagem-cabecalho-perfil-a {
+        display: flex;
+        text-decoration: none;
+    }
+    
+    .container__imagem-cabecalho-compras {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        padding-right: 3em;
+        color: black;
+    }
+
+    .container__imagem-cabecalho-perfil {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        padding-right: 4em;
+        color: black;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    
+    .cabeçalho {
+        background-color: var(--branco);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+    }    
+
+    .container__imagem {
+        padding: 1em 1em 1em 1.5em;
+    }
+
+    .container__imagem-alura {
+        padding: 1.2em 0.7em 1.2em 1.2em;
+        margin-left: 3.3em;
+    }
+
+    #alura {
+        font-family: var(--fonte-secundaria);
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        padding-top: 0.4em;
+    }
+
+    #books {
+        font-family: var(--fonte-secundaria);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        padding-top: 0.4em;
+    }
+
+    
+    .lista-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        width: 12vw;
+        text-align: start;
+    }
+
+    .container__botao:checked~.lista-menu {
+        display: block;
+    }
+
+    .lista-menu__titulo,
+    .lista-menu__item {
+        padding: 1em;
+        background-color: var(--branco);
+    }
+
+    .lista-menu__titulo {
+        color: var(--laranja);
+        font-weight: 700;
+    }
+
+    .lista-menu__link {
+        background: var(--azul-degrade);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: none;
+        background-clip: text;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .container__botao {
+        display: none;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+
+    .trio {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding-right: 25vw;
+    }
+
+    .opcoes__item {
+        margin: 0 1.5em;
+        text-decoration: none;
+        color: black;
+        padding: 2em 1em;
+    }
+
+    .container__imagem-favoritos {
+        display: none;
+    }
+
+    .container__imagem-cabecalho {
+        margin-right: 0.5em;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .menu__label > .opcoes__item {
+        background: var(--azul-degrade);
+        color: white;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        color: var(--branco);
+    }
+}
